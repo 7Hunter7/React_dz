@@ -10,10 +10,11 @@ function TemperatureConverter() {
   const measurement = () => {
     if (сelsius !== 0) {
       setСelsius(сelsius);
-      setFahrenheit(Math.round10((9 / 5) * сelsius + 32));
-    } else if (fahrenheit !== 0) {
+      setFahrenheit(Math.round((9 / 5) * сelsius + 32));
+    }
+    if (fahrenheit !== 0) {
       setFahrenheit(fahrenheit);
-      setСelsius(Math.round10((5 / 9) * (fahrenheit - 32)));
+      setСelsius(Math.round((5 / 9) * (fahrenheit - 32)));
     }
   };
 
@@ -45,10 +46,18 @@ function TemperatureConverter() {
         value={fahrenheit}
         type="number"
       />
-      <Button onClick={measurement} variant="contained" style={{ margin: 20 }}>
+      <Button
+        onClick={measurement}
+        variant="contained"
+        style={{ marginTop: 30 }}
+      >
         Конвертировать
       </Button>
-      <Button onClick={clear} variant="contained" style={{ margin: 20 }}>
+      <Button
+        onClick={clear}
+        variant="contained"
+        style={{ marginTop: 30, marginLeft: 20 }}
+      >
         Очистить поля
       </Button>
     </div>
