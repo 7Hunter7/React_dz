@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border: 2px solid orange;
+  border-radius: 10px;
+  background-color: beige;
+}
+.title {
+  color: brown;
+}
+.time {
+  color: green;
+}
+.data {
+  color: blue;
+}
+
+.my__event_cart {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid purple;
+  background-color: plum;
+  padding: 32px;
+}
+.my__event_cart h2 {
+  color: blue;
+  font-size: large;
+  font-weight: 600;
+  font-style: bold;
+}
+.my__event_cart h3 {
+  margin-top: 20px;
+  color: royalblue;
+  font-size: medium;
+  font-weight: 400;
+  font-style: italic;
+}
