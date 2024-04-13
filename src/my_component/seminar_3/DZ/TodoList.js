@@ -22,7 +22,7 @@ function TodoList() {
   };
 
   const deleteTask = (index) => {
-    const updatedTasks = tasks.filter((a, i) => i !== index);
+    const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);
   };
 
